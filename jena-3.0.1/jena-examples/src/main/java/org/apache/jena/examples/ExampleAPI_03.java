@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.jena.example.helloworld;
+package org.apache.jena.examples;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -38,7 +38,8 @@ public class ExampleAPI_03 {
         model.add (alice, FOAF.mbox, ResourceFactory.createResource("mailto:alice@example.org"));
         model.add (alice, FOAF.knows, bob);
 
-        model.write(System.out, "TURTLE");
+        //model.write(System.out, "TURTLE");
+        model.write(System.out, "JSON-LD");
     }
 
 }

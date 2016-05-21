@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.jena.example.helloworld;
+package org.apache.jena.examples;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

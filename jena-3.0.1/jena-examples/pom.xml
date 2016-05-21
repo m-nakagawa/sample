@@ -59,6 +59,58 @@
       <artifactId>commons-cli</artifactId>
       <version>1.2</version>
     </dependency>
+    <!-- These are for ExampleRDFa_* -->
+    <dependency>
+      <groupId>net.rootdev</groupId>
+      <artifactId>java-rdfa</artifactId>
+      <version>${java-rdfa.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.rootdev</groupId>
+      <artifactId>java-rdfa-htmlparser</artifactId>
+      <version>${java-rdfa.version}</version>
+    </dependency>
+    
+    <!-- Logging: SL4J -> Log4j -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jruby</groupId>
+      <artifactId>jruby-core</artifactId>
+      <version>${jruby.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>${poi.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <!-- <scope>test</scope> -->
+    </dependency>
+    
   </dependencies>
 
   <repositories>

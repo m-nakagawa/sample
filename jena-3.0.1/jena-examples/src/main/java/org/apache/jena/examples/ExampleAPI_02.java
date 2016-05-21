@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.jena.example.helloworld;
+package org.apache.jena.examples;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
