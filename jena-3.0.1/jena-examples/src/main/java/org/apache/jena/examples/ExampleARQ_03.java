@@ -40,7 +40,7 @@ public class ExampleARQ_03 {
         		"	?region rdf:type italy:Region" +
         		"}";
         Query query = QueryFactory.create(queryString);
-        QueryEngineHTTP qexec = (QueryEngineHTTP)QueryExecutionFactory.createServiceRequest("http://api.kasabi.com/dataset/italy/apis/sparql", query);
+        QueryEngineHTTP qexec = QueryExecutionFactory.createServiceRequest("http://api.kasabi.com/dataset/italy/apis/sparql", query);
         qexec.addParam("apikey", apikey);
         try {
             ResultSet results = qexec.execSelect();
