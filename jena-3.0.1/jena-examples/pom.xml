@@ -33,6 +33,10 @@
   <properties>
     <ver.jena>[2.11.1-SNAPSHOT,)</ver.jena>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!-- MN -->
+    <poi.version>3.8-beta5</poi.version>
+    <jruby.version>1.6.5</jruby.version>
+	<java-rdfa.version>0.4.2-RC2</java-rdfa.version>
   </properties>
 
   <organization>
@@ -60,24 +64,32 @@
       <version>1.2</version>
     </dependency>
     <!-- These are for ExampleRDFa_* -->
+
     <dependency>
       <groupId>net.rootdev</groupId>
       <artifactId>java-rdfa</artifactId>
       <version>${java-rdfa.version}</version>
     </dependency>
+
     <dependency>
       <groupId>net.rootdev</groupId>
       <artifactId>java-rdfa-htmlparser</artifactId>
       <version>${java-rdfa.version}</version>
     </dependency>
-    
+<!-- 
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-text</artifactId>
+      <version>${ver.jena}</version>
+    </dependency>
+ -->
     <!-- Logging: SL4J -> Log4j -->
+<!-- 
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
@@ -91,26 +103,32 @@
       <version>${log4j.version}</version>
       <optional>true</optional>
     </dependency>
+-->
+<!-- http://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
+<dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-core</artifactId>
+    <version>6.0.0</version>
+</dependency>
 
-    <dependency>
+     <dependency>
       <groupId>org.jruby</groupId>
       <artifactId>jruby-core</artifactId>
       <version>${jruby.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
       <version>${poi.version}</version>
     </dependency>
-
+<!--
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
-      <!-- <scope>test</scope> -->
     </dependency>
-    
+  -->
+      <!-- <scope>test</scope> -->
   </dependencies>
 
   <repositories>

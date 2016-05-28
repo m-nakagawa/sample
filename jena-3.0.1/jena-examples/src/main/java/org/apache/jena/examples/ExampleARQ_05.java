@@ -39,7 +39,7 @@ public class ExampleARQ_05 {
         
         File path = new File("src/main/resources/data/queries");
         File[] files = path.listFiles(new FilenameFilter() {
-			@Override
+        	//MN@Override
 			public boolean accept(File dir, String name) {
 				return name.startsWith("construct-") && name.endsWith(".sparql");
 			}
