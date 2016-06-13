@@ -168,6 +168,11 @@
   </servlet>
   
   <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>org.apache.jena.fuseki.mgt.MyService</servlet-class>
+  </servlet>
+  
+  <servlet>
     <servlet-name>BackupListServlet</servlet-name>
     <servlet-class>org.apache.jena.fuseki.mgt.ActionBackupList</servlet-class>
   </servlet>
@@ -190,6 +195,11 @@
   <servlet-mapping>
     <servlet-name>PingServlet</servlet-name>
     <url-pattern>/$/ping</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/my/*</url-pattern>
   </servlet-mapping>
   
   <servlet>
